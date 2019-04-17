@@ -94,7 +94,13 @@ $$ \sqrt[n]{x_1 x_2 \cdots x_n} \leq \frac{x_1 + x_2 + \cdots + x_n}{n} $$
 
 ### 1.6 自然对数的底 e
 
-对于 $e_n = \left(1 + \frac{1}{n}\right)^n$ 是单调递增数列，并且有上界。
+对于 
+
+$$
+e_n = \left(1 + \frac{1}{n}\right)^n
+$$
+
+是单调递增数列，并且有上界。
 
 证明用到二项式定理有：
 $$
@@ -107,3 +113,7 @@ $$
 e = \lim_{n\rightarrow \infty} \left(1+\frac{1}{1!}+\frac{1}{2!}+\cdots+\frac{1}{n!}\right)
 $$
 练习题 1.6 第2题
+
+### 1.7 基本列和Cauchy收敛原理
+
+数列收敛的充分必要条件是，数列是基本列。
