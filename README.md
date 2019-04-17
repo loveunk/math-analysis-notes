@@ -9,7 +9,7 @@
 
 ## 第一章 实数和数列极限
 
-### 1.1 数轴
+### 1.1 实数
 
 #### 问题1.1
 
@@ -64,12 +64,46 @@ $$
 
 因此有：
 - $a_1b_1 + a_2b_2+ \cdots + a_nb_n = a_1b_1+ a_2b_2+ \cdots + a_nb_n​$
-- $a_1b_1 + a_2b_2+ \cdots + a_nb_n \le a_1b_2 + a_2b_3 + \cdots + a_nb_1$
+- $a_1b_1 + a_2b_2+ \cdots + a_nb_n \ge a_1b_2 + a_2b_3 + \cdots + a_nb_1$
 - $a_1b_1 + a_2b_2+ \cdots + a_nb_n = a_1b_3 + a_2b_4 +  \cdots + a_nb_2$
 - $\vdots$
 - $a_1b_1+ a_2b_2 + \cdots + a_nb_n \ge a_1b_n + a_2b_1 + \cdots + a_nb_{n-1}$
 
-将这$n$个不等式分边相加，同时对右边进行因式分解，便得到：
+将这$n​$个不等式分边相加，同时对右边进行因式分解，便得到：
 
 $n(a_1b_1 + a_2b_2+ \cdots + a_nb_n) \ge (a_1 + a_2 + a_3 + \cdots + a_n)(b_1 + b_2+ \cdots + b_n)$
 两边同时处于$n$，即证明了命题。
+
+### 1.2 数列和收敛数列
+
+例四里用到 **几何平均-算术平均不等式**:
+
+$$ \sqrt[n]{x_1 x_2 \cdots x_n} \leq \frac{x_1 + x_2 + \cdots + x_n}{n} $$
+
+### 1.3 收敛数列的性质
+
+练习题 1.3 第3、4、5题
+
+### 1.4 数列极限的推广
+
+练习题 1.4 第3题
+
+### 1.5 单调数列
+
+练习题 1.5 第1题
+
+### 1.6 自然对数的底 e
+
+对于 $e_n = \left(1 + \frac{1}{n}\right)^n$ 是单调递增数列，并且有上界。
+
+证明用到二项式定理有：
+$$
+e_n = 1 + \sum_{k=1}^n \binom{n}{k} \frac{1}{n^k}
+$$
+
+
+自然对数 $e$ :
+$$
+e = \lim_{n\rightarrow \infty} \left(1+\frac{1}{1!}+\frac{1}{2!}+\cdots+\frac{1}{n!}\right)
+$$
+练习题 1.6 第2题
