@@ -142,6 +142,69 @@ $$
 
 **定理**：一个数列收敛的充分必要条件是它是基本列。
 
+### 1.8上确界和下确界
+
+**定义1.8.1**：设$E$为一非空的有上界的集合，实数$\beta$满足一下两个条件：
+
+* 对任何$x \in E$，有$x \leq \beta$；
+* 对任意给定的$\epsilon >0$，必可找到一个$x_\epsilon \in E$，使得$x_\epsilon > \beta - \epsilon$
+
+这时，称$\beta$为集合$E$的**上确界**，记作$\beta = \mathbb{sup} E$。
+
+**定义1.8.2**：设$E$为一非空的有上界的集合，实数$\alpha$满足一下两个条件：
+
+- 对任何$x \in E$，有$x \geq \alpha$；
+- 对任意给定的$\epsilon >0$，必可找到一个$_y\epsilon \in E$，使得$x_\epsilon < \alpha + \epsilon$
+
+这时，称$\alpha$为集合$E$的**下确界**，记作$\alpha = \mathbb{inf} E$。
+
+**定理1.8.1**：非空的有上界的集合必有上确界；非空的有下界的集合必有下确界。
+
+### 1.9 有限覆盖定理
+
+**定义1.9.1**：如果$A$是实数集，$\mathscr{J}=\left\{I_{\lambda}\right\}$是一个开区间族，其中$\lambda \in \Lambda$，这里的$\Lambda$称为指标集。如果
+$$
+A \subset \bigcup_{\lambda \in \Lambda} I_{\lambda}
+$$
+称开区间族$\{ I_\lambda \}$是$A$的一个**开覆盖**，或者说$\{I_\lambda\}$盖住了$A$。
+
+$\mathscr{J}=\left\{I_{\lambda}\right\}$是$A$开覆盖也可以等价叙述为：任取 $a \in A$，总有$\mathscr{J}$中的一个成员，记为$I_{\lambda(a)}$，使得$a \in I_{\lambda(a)}$。
+
+**定理1.9.1（紧致性定理）**：设$[a, b]$是一个有限闭区间，并且它有一个开覆盖$\{ I_\lambda \}$，那么从这个开区间族中必可选取有限个成员（开区间）来，这有限个开区间所成的族任事$[a, b]$的开覆盖。也称为**有限覆盖定理**、**Heine-Borel定理**。
+
+### 1.10 上极限和下极限
+
+**定义1.10.1**：设$\{a_n\}$是一个数列，$E$是由$\{a_n\}$的全部极限点构成的集合。记
+$$
+a^{\space*}=\sup E, \quad a_{\space*}=\inf E
+$$
+$a^{\space*}, a_{\space*}$分别称为数列$\{a_n\}$的**上极限**和**下极限**，记为
+$$
+\limsup _{n \rightarrow \infty} a_{n}, \quad \liminf _{n \rightarrow \infty} a_{n}
+$$
+**定理1.10.1**：设$\{a_n\}$是一个数列，$E$和$a^*$的定义同前，那么：
+
+* $a^* \in E$；
+* 若$x > a^*$，则存在$N \in N^*$，使得当$n \geq N$时，有$a_n < x$；
+* $a^*$是满足前两条性质的唯一数。
+
+**定理1.10.2**：设$\{a_n\}$，$\{b_n\}$是两个数列：
+
+* $\liminf _{n \rightarrow \infty} a_{n} \leq\limsup _{n \rightarrow \infty} a_{n}$；
+* $\lim_{n \rightarrow \infty} a_{n}=a$当且仅当$\liminf _{n \rightarrow \infty} a_{n} = \limsup _{n \rightarrow \infty} a_{n} = a$；
+* 若$N$是某个正整数，当$n>N$时，$a_n \leq b_n$，那么
+
+$$
+\liminf _{n \rightarrow \infty} a_{n} \leq\liminf _{n \rightarrow \infty} b_{n}, \quad \limsup _{n \rightarrow \infty} a_{n} \leq\limsup _{n \rightarrow \infty} b_{n}
+$$
+
+**定理1.10.3**：对于数列$\{a_n\}$，定义$\alpha_n=\inf_{k\geq n}a_k$, $\beta_n = \sup_{k \geq n} a_k$，那么：
+
+* $\{\alpha_n\}$是递增数列，$\{\beta_n\}$是递减数列；
+* $\lim_{n\rightarrow \infty}\alpha_n = a_*$, $\lim_{n\rightarrow \infty}\beta_n = a^*$。
+
+
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
