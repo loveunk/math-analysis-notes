@@ -7,6 +7,22 @@
 > * 你在GitHub online查看，建议使用Chrome配合Chrome插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en)以便查看排版后的LaTeX
 > * 你下载此Repo源文件到本地，建议使用[Typora](https://support.typora.io)并开启([Inline Math](https://support.typora.io/Math/#inline-math))后查看。
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [史怀济《数学分析》学习笔记](#史怀济数学分析学习笔记)
+	- [第一章 实数和数列极限](#第一章-实数和数列极限)
+		- [1.1 实数](#11-实数)
+			- [问题1.1](#问题11)
+			- [问题1.2](#问题12)
+		- [1.2 数列和收敛数列](#12-数列和收敛数列)
+		- [1.3 收敛数列的性质](#13-收敛数列的性质)
+		- [1.4 数列极限的推广](#14-数列极限的推广)
+		- [1.5 单调数列](#15-单调数列)
+		- [1.6 自然对数的底 e](#16-自然对数的底-e)
+		- [1.7 基本列和Cauchy收敛原理](#17-基本列和cauchy收敛原理)
+
+<!-- /TOC -->
+
 ## 第一章 实数和数列极限
 
 ### 1.1 实数
@@ -17,7 +33,7 @@
 
 方法一（反证法、[韦达跳跃](https://zh.wikipedia.org/wiki/%E9%9F%8B%E9%81%94%E8%B7%B3%E8%BA%8D)）：
 
-令 
+令
 $$
 k = \frac{a^2 + b^2}{ab + 1}
 $$
@@ -40,7 +56,7 @@ $$
     - $a^2 - bka + b^2 - k = 0, \tag{1}$
     - $a_1^2 - bka_1 + b^2 - k = 0, \tag{2}$
   - $(1), (2)$两式相减及相加（其实这是[韦达定理](https://zh.wikipedia.org/wiki/%E9%9F%A6%E8%BE%BE%E5%AE%9A%E7%90%86)），可以得到
-    - $a + a_1 = bk, \tag{3}$ 
+    - $a + a_1 = bk, \tag{3}$
     - $b^2 - k = a a_1, \tag{4}$
     - 根据题目定义，$b, k$ 是整数，所以 $a_1$是整数。
   - 接着证明 $a_1$ 的正负性：
@@ -94,7 +110,7 @@ $$ \sqrt[n]{x_1 x_2 \cdots x_n} \leq \frac{x_1 + x_2 + \cdots + x_n}{n} $$
 
 ### 1.6 自然对数的底 e
 
-对于 
+对于
 
 $$
 e_n = \left(1 + \frac{1}{n}\right)^n
@@ -116,7 +132,7 @@ $$
 
 ### 1.7 基本列和Cauchy收敛原理
 
-**基本列的定义**：设$\{a_n\}$是一列实数列。对任意给定的$\epsilon>0$，若存在$N\in N^*$，使得当$m, n\in N^*$且$m,n>N$时，有 $|a_m-a_n|<\epsilon$ 
+**基本列的定义**：设$\{a_n\}$是一列实数列。对任意给定的$\epsilon>0$，若存在$N\in N^*$，使得当$m, n\in N^*$且$m,n>N$时，有 $|a_m-a_n|<\epsilon$
 
 数列收敛的充分必要条件是，数列是基本列。
 
@@ -126,3 +142,8 @@ $$
 
 **定理**：一个数列收敛的充分必要条件是它是基本列。
 
+## 参考
+
+1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
+
+[回到顶部](#史怀济数学分析学习笔记)
