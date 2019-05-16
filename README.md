@@ -318,6 +318,76 @@ $$
 
 ### 2.4 函数的极限
 
+**定义2.4.1 函数极限：**设函数$f$在点$x_0$的附近有定义，但$x_0$这一点自身可以是例外。设$l$是一个实数，如果对任意给定的$\epsilon > 0$，存在一个$\delta >0$，使得对一切满足不等式$0<|x-x_0|<\delta$的$x$，均有
+$$
+|f(x)-l|<\epsilon
+$$
+则称当$x$趋于点$x_0$时函数$f$有**极限**$l$，记作
+$$
+\lim_{x\rightarrow x_0}f(x)=l
+$$
+或
+$$
+f(x) \rightarrow l \quad (x \rightarrow x_0)
+$$
+**定理2.4.2（函数极限的唯一性）**：若$\lim_{x \rightarrow x_0} f(x)$存在，则它是唯一的。
+
+**定理2.4.3**：若$f$在$x_0$处有极限，那么$f$在$x_0$的一个近旁是有界的。也就是，存在整数$M, \delta$，使得当$0<\left|x-x_{0}\right|<\delta$时，$ f(x)|<M$。
+
+**定理2.4.4**：$\lim _{x \rightarrow x_{0}} f(x)$与$\lim _{x \rightarrow x_{0}} g(x)$都存在时，那么有：
+
+* $\lim _{x \rightarrow x_{0}}(f \pm g)(x)=\lim _{x \rightarrow x_{0}} f(x) \pm \lim _{x \rightarrow x_{0}} g(x)$
+* $\lim _{x \rightarrow x_{0}}fg(x)=\lim _{x \rightarrow x_{0}} f(x) \cdot  \lim _{x \rightarrow x_{0}} g(x)$
+* $\lim _{x \rightarrow x_{0}}\frac{f}{g}(x)=\frac{\lim _{x \rightarrow x_{0}} f(x)}{\lim _{x \rightarrow x_{0}} g(x)}$，其中$\lim _{x \rightarrow x_{0}} g(x) \neq 0$
+
+**定理2.4.5**：设函数$f, g$与$h$在点$x_0$的近旁（点$x_0$自身可能是例外）满足不等式
+$$
+f(x) \leq h(x) \leq g(x)
+$$
+如果$f, g$在点$x_0$有相同的极限$l$，那么$h$点$x_0$也有极限$l$。
+
+**定理2.4.6**：设存在$r>0$，使得当$0<|x-x_0|<r$时，不等式$f(x)\leq g(x)$成立，又设在$x_0$出这两个函数都有极限，那么
+$$
+\lim_{x \rightarrow x_0}f(x) \leq \lim_{x \rightarrow x_0}g(x)
+$$
+**定理2.4.7**：函数$f$在$x_0$有极限，必须且只需对任意给定的$\epsilon > 0$，存在$\delta > 0$，使得对任意的$x_1, x_2 \in B_\delta(\hat x_0)$，都有$|f(x_1)-f(x_2)|<\epsilon$。
+
+**定理2.4.8**：设$\lim_{x \rightarrow x_0}f(x)=l, \lim_{x \rightarrow t_0}g(t)=x_0$，如果在$t_0$的某个领域$B_{\eta}(t_0)$内$g(t) \neq x_0$，那么
+$$
+\lim_{t \rightarrow t_0} f(g(t))=l
+$$
+**定义2.4.2**：设函数$f$在$(x_0, x_0+r)$上有定义。设$l$是一个给定的实数，若对任意给定的$\epsilon > 0$，存在一个$\delta \in (0, r)$，使得$0 < x-x_0 < \delta$时，有
+$$
+|f(x) - l| < \epsilon
+$$
+则称$l$为$f$在$x_0$处的右极限，表示为
+$$
+l=\lim_{x \rightarrow x^+_0}f(x)
+$$
+右极限通常记作$f(x_0+)$，类似地，可以定义$f$在$x_0$处的左极限$f(x_0-)$。
+
+**定理2.4.9**：设函数$f$在$x_0$的某个领域内（$x_0$可能是例外）有定义，那么$\lim_{x \rightarrow x_0} f(x)$ 存在的充分必要条件是
+$$
+f(x_0+) = f(x_0-)
+$$
+例子：
+$$
+\lim_{x \rightarrow 0}\frac{\sin x}{x}=1
+$$
+
+
+#### 练习题
+
+11、（3）$x^{m-1}+x^{m-2}+\cdots+1=m$ 
+
+（4）同理，$m/n$
+
+（5）$\frac{1}{\sqrt{1+x}+1}=\frac{1}{2}$
+
+（7）
+
+（8）$=\lim_{x \rightarrow 1}\left(\frac{x-1}{x-1}+\frac{x^2-1}{x-1}+\cdots+\frac{x^m-1}{x-1}\right)=1+2+\cdots+m=\frac{(1+m)m}{2}$
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
