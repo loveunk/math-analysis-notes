@@ -411,11 +411,46 @@ f(-\infty) = \lim_{x\rightarrow -\infty}f(x)=l, f(+\infty) = \lim_{x\rightarrow 
 $$
 同时成立。
 
-是一确定实数，表达式
+### 2.6 无穷小与无穷大
+
+**定义2.6.1**：设$x_0$是一个实数，函数$f(x)$在$x_0$的一个近旁（可能除$x_0$之外）有定义。如果对任意给定的正数A，存在$\delta>0$，使得$0<|x-x_0|<\delta$时，有$|f(x)|>A$，则称“当x趋向于$x_0$时，函数$f$趋向于**<u>无穷大</u>**”，记作
 $$
-\lim_{x \rightarrow \infty} f(x)=l
+\lim_{x\rightarrow x_0}f(x)=\infty,
 $$
-的意思是，，有$|f(x)-l|<\epsilon$。这时，我们说“当x趋向于无穷时，函数$f$有极限$l$”。
+或者
+$$
+f(x)\rightarrow\infty \quad (x\rightarrow x_0)
+$$
+
+类似的，如果$\lim f(x)=0$，则称“在该过程中，$f$是一个**<u>无穷小（量）</u>**”。
+
+定义2.6.2：设当$x\rightarrow x_0$时，$f$与$g$都是无穷小，并且$g$在$x_0$的一个充分小的近旁（除$x_0$外）不取零值。
+
+（1）如果$\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0$，那么称$f$是比$g$更高阶的无穷小；
+
+（2）如果$\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)} \neq 0$，那么称$f$是和$g$同阶的无穷小；
+
+（3）如果（2）中的极限值$l=1$，那么称$f$与$g$石等阶的无穷小，记作$f \sim g \quad (x \rightarrow x_0)$。
+
+类似的，如果$f, g$都是无穷大：
+
+（1）如果$\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0$，那么称$g$是比$f$更高阶的无穷大；
+
+（2）如果$\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)} \neq 0$，那么称$f$是和$g$同阶的无穷大；
+
+**定理2.6.1**：如果当$x\rightarrow x_0$（$x_0$可以是$\pm \infty$）时，$f,g$等价的无穷小或无穷大时，那么：
+
+（1）$\lim_{x\rightarrow x_0}f(x)h(x)=\lim_{x\rightarrow x_0}h(x)f(x)$
+
+（1）$\lim_{x\rightarrow x_0}\frac{f(x)}{h(x)}=\lim_{x\rightarrow x_0}\frac{g(x)}{h(x)}$
+
+**定义2.6.3**：设函数$f,g$在$x_0$的近旁（$x_0$除外）有定义，并且$g(x)\neq 0$：
+
+（1）当$x\rightarrow x_0$时，若比值$f(x)/g(x)$保持有界，即存在正常数$M$，使得$|f(x)|\leq M|g(x)|$成立，就用$f(x)=O(g(x))(x\rightarrow x_0)$来表示；
+
+（2）当$x\rightarrow x_0$时，若比值$f(x)/g(x)$是一个无穷小，即$\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0$，就用$f(x)=o(g(x))(x\rightarrow x_0)$表示。
+
+
 
 ## 参考
 
