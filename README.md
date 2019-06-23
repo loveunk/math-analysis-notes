@@ -388,6 +388,35 @@ $$
 
 （8）$=\lim_{x \rightarrow 1}\left(\frac{x-1}{x-1}+\frac{x^2-1}{x-1}+\cdots+\frac{x^m-1}{x-1}\right)=1+2+\cdots+m=\frac{(1+m)m}{2}$
 
+### 2.5 极限过程的其他形式
+
+**定义2.5.1**：设$l$是一确定实数，表达式
+$$
+\lim_{x \rightarrow \infty} f(x)=l
+$$
+的意思是，对任意给定的$\epsilon > 0$，存在一个正数$A$，当$x$满足$|x|>A$时，有$|f(x)-l|<\epsilon$。这时，我们说“当x趋向于无穷时，函数$f$有极限$l$”。
+
+**定义2.5.2**：对任意给定的$\epsilon > 0$，存在一个正数$A>0$，使得当$x<-A$时，有
+$$
+|f(x) - l| < \epsilon
+$$
+
+在这种情况下，我们说“在负无穷处函数$f$有极限$l$”，记作
+$$
+f(-\infty) = \lim_{x\rightarrow -\infty}f(x)=l
+$$
+**定理2.5.1**：$\lim_{x \rightarrow \infty} f(x)=l$ 当且仅当
+$$
+f(-\infty) = \lim_{x\rightarrow -\infty}f(x)=l, f(+\infty) = \lim_{x\rightarrow +\infty}f(x)=l
+$$
+同时成立。
+
+是一确定实数，表达式
+$$
+\lim_{x \rightarrow \infty} f(x)=l
+$$
+的意思是，，有$|f(x)-l|<\epsilon$。这时，我们说“当x趋向于无穷时，函数$f$有极限$l$”。
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
