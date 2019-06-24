@@ -531,9 +531,37 @@ $$
 $$
 f(x^*)=M, \quad f(x_*) = m.
 $$
-定理2.10.4（**<u>零值定理</u>**）：设$f$在$[a, b]$上连续，如果$f(a)f(b)<0$，则必存在一点$c\in (a, b)$，使得$f(c)=0$。
+**定理2.10.4**（**<u>零值定理</u>**）：设$f$在$[a, b]$上连续，如果$f(a)f(b)<0$，则必存在一点$c\in (a, b)$，使得$f(c)=0$。
 
-定理2.10.5（**<u>介值定理</u>**）：设$f$是在$[a, b]$上非常值的连续函数，$\gamma$是介于$f(a)$与$f(b)$之间的任何实数，
+**定理2.10.5**（**<u>介值定理</u>**）：设$f$是在$[a, b]$上非常值的连续函数，$\gamma$是介于$f(a)$与$f(b)$之间的任何实数，则必存在$c \in (a, b)$，使得$f(c) = \gamma$。
+
+**推论2.10.1**：设非常数值函数$f$在$I=[a, b]$上连续，那么$f$的值域$f(I)$是一个闭区间。
+
+### 2.11 函数的上极限和下极限
+
+**定义2.11.1**：令$E=\{l \in R_{\infty}:存在数列x_n\in B_{\delta}(\tilde{x}), x_n \rightarrow x_0, 使得f(x_n)\rightarrow l\}$
+
+这是一个非空集合，设$a^*=\sup E, a_*=\inf E$，分别称它们为 $f$当$x \rightarrow x_0$时的上极限和下极限，分别记作
+$$
+\lim_{x \rightarrow x_0} \sup f(x), \quad \lim_{x \rightarrow x_0} \inf f(x).
+$$
+**定理2.11.1**：设函数$f$定义在$I$上，那么：
+
+1. $a^{*} \in E$；
+2. 若$y > a^*$，则存在$\delta > 0$，使得当 $0 < |x - x_0| < \delta$时，$f(x) < y$；
+3. $a^*$是满足前述条件性质唯一的数。
+
+**定理2.11.2**：设$f, g$在$I$上有定义，那么：
+
+1. $\lim_{x \rightarrow x_0} \inf f(x) \leq \lim_{x \rightarrow x_0} \sup f(x)$；
+2. $\lim_{x \rightarrow x_0} f(x) = a$, 当且仅当$\lim_{x \rightarrow x_0} \inf f(x) = \lim_{x \rightarrow x_0} \sup f(x) = a$；
+3. 若当$x \in I$时，$f(x) \leq g(x)$成立，则
+
+$$
+\lim_{x \rightarrow x_0} \inf f(x) \leq \lim_{x \rightarrow x_0} \inf g(x), \quad \lim_{x \rightarrow x_0} \sup f(x) \leq \lim_{x \rightarrow x_0} \sup g(x)
+$$
+
+
 
 ## 参考
 
