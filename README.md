@@ -670,7 +670,7 @@ c' = 0 \\
 (\arcsin x)' = \frac{1}{\sqrt{1-x^2}} \\
 (\arccos x)' = -\frac{1}{\sqrt{1-x^2}} \\
 (\arctan x)' = \frac{1}{1+x^2} \\
-(\arccot x)' = -\frac{1}{1+x^2}
+(\text{arccot }x)' = -\frac{1}{1+x^2}
 $$
 
 ### 3.3 高阶导数
@@ -798,9 +798,9 @@ $$
 
 ### 3.7 函数作图
 
-**定义3.7.1**：设函数$f$在$x_0$的两旁（包括$x_0$在内）有定义，在$x_0$的一侧图像$y = f(x)$时严格凸的，另一侧是严格凹的，那么称$x_0$是$f$的一个**拐点**。
+**定义3.7.1（<u>拐点</u>）**：设函数$f$在$x_0$的两旁（包括$x_0$在内）有定义，在$x_0$的一侧图像$y = f(x)$时严格凸的，另一侧是严格凹的，那么称$x_0$是$f$的一个**拐点**。
 
-**定义3.7.2**：（1）如果$\lim_{x \rightarrow +\infty}f(x) = a$或$\lim_{a \rightarrow -\infty}f(x) = b$，则称$y = a$或$y = b$为$y = f(x)$的一条**水平渐近线**。
+**定义3.7.2（<u>渐近线</u>）**：（1）如果$\lim_{x \rightarrow +\infty}f(x) = a$或$\lim_{a \rightarrow -\infty}f(x) = b$，则称$y = a$或$y = b$为$y = f(x)$的一条**水平渐近线**。
 
 （2）如果$\lim_{x \rightarrow x_0^+}f(x) = \pm \infty$或$\lim_{x \rightarrow x_0^-}f(x) = \pm \infty$，则称$x = x_0$为$y = f(x)$的一条**垂直渐近线**。
 
@@ -815,7 +815,23 @@ $$
 5. 确定函数是否有渐近线
 6. 求出一些特殊点的值
 
+## 第四章 一元微分学的巅峰
 
+### 4.1 函数的微分
+
+**定义4.1.1（<u>可微、微分</u>）**：设函数$f$在$(a, b)$上有定义，且$x_0 \in (a, b)$，如果存在一个常数$\lambda$使得
+$$
+f(x_0+\Delta x) - f(x_0) = \lambda\Delta x + o(\Delta x) \quad(\Delta x \rightarrow 0),
+$$
+则称函数$f$在点$x_0$处**可微**。函数的改变量的线性主要部分$\lambda \Delta x$称为$f$在$x_0$处的**微分**，记作$\text{d} f(x_0)$。
+
+一般地，关于**函数四则运算的微分**，有如下法则：
+
+* $\text{d} (f \pm g) = \text{d} f \pm \text{d} g$
+* $\text{d} (fg) = g \text{d} f + f \text{d} g$
+* $\text{d} (\frac{f}{g}) = \frac{g \text{d} f + f \text{d} g}{g^2}$，其中$g \neq 0$
+
+导函数$f'$可以用$\frac{\text{d}f}{\text{d}g}$来表示，这是导数的Leibniz记号，因为$\frac{\text{d}f}{\text{d}g}$是函数的微分与自变量的微分的商，因此导数也称为**微商**。
 
 ## 参考
 
