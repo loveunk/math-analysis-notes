@@ -825,6 +825,12 @@ f(x_0+\Delta x) - f(x_0) = \lambda\Delta x + o(\Delta x) \quad(\Delta x \rightar
 $$
 则称函数$f$在点$x_0$处**可微**。函数的改变量的线性主要部分$\lambda \Delta x$称为$f$在$x_0$处的**微分**，记作$\text{d} f(x_0)$。
 
+因此，当$|x - x_0|$相当小时有：
+$$
+f(x) \approx f(x_0) + f'(x_0)(x - x_0)
+$$
+
+
 一般地，关于**函数四则运算的微分**，有如下法则：
 
 * $\text{d} (f \pm g) = \text{d} f \pm \text{d} g$
@@ -832,6 +838,8 @@ $$
 * $\text{d} (\frac{f}{g}) = \frac{g \text{d} f + f \text{d} g}{g^2}$，其中$g \neq 0$
 
 导函数$f'$可以用$\frac{\text{d}f}{\text{d}g}$来表示，这是导数的Leibniz记号，因为$\frac{\text{d}f}{\text{d}g}$是函数的微分与自变量的微分的商，因此导数也称为**微商**。
+
+
 
 ## 参考
 
