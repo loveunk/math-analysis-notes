@@ -6,7 +6,6 @@
 >
 > * 你在GitHub online查看，建议使用Chrome配合Chrome插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en)以便查看排版后的LaTeX
 > * 你下载此Repo源文件到本地，建议使用[Typora](https://support.typora.io)并开启([Inline Math](https://support.typora.io/Math/#inline-math))后查看。
-
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [史怀济《数学分析》学习笔记](#史怀济数学分析学习笔记)
@@ -43,6 +42,9 @@
 		- [3.1 导数的定义](#31-导数的定义)
 		- [3.2 导数的计算](#32-导数的计算)
 		- [3.3 高阶导数](#33-高阶导数)
+		- [3.4 微分学的中值定理](#34-微分学的中值定理)
+		- [3.5 利用导数研究函数](#35-利用导数研究函数)
+		- [3.6 L'Hospital法则](#36-lhospital法则)
 	- [参考](#参考)
 
 <!-- /TOC -->
@@ -682,13 +684,13 @@ $$
 $$
 (fg)^{(n)} = \sum^n_{k=0}
 \begin{pmatrix}
-n\\ 
+n\\
 k
 \end{pmatrix}
 f^{(n-k)}g^{(k)}
 $$
 这里$f^{(0)} = f, g^{(0)} = g$。其中组合系数$\begin{pmatrix}
-n\\ 
+n\\
 k
 \end{pmatrix}=\frac{n!}{k!(n-k)!} \quad(k=0,1,\cdots,n).$
 
@@ -765,6 +767,34 @@ $$
 **定理3.5.10**：设$f$在$[a, b]$上连续，在$(a, b)$上可导，则$f$在$[a, b]$上为凸函数（严格凸函数）的一个充分必要条件是，$f'$在$(a, b)$上递增（严格递增）。
 
 **定理3.5.11**：设函数$f$在$[a, b]$上连续，在$(a, b)$上有二阶导数，则$f$在$[a, b]$上为凸函数的充分必要条件是，$f'' \ge 0$在$(a, b)$上成立；而$f$在$[a, b]$上为严格凸函数的充分必要条件是，$f'' \ge 0$在$(a, b)$上成立，并且在$(a, b)$的任何子区间内$f''$不恒等于0.
+
+### 3.6 L'Hospital法则
+
+**定理3.6.1（L'Hospital洛必达）**：设$f, g$在$(a, b)$上可导，并且$g(x) \neq 0$对$x \in (a, b)$成立，又设
+$$
+\lim_{x \rightarrow a^+} f(x) = \lim_{x \rightarrow a^+} g(x) = 0
+$$
+在这些条件下，如果极限$\lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}$存在（或为$\infty$），那么便有
+$$
+\lim_{x \rightarrow a^+} \frac{f(x)}{g(x)} = \lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}.
+$$
+**定理3.6.2**：设函数$f, g$在$(a, +\infty)$上可导，并且$g(x) \neq 0$对$x \in (a, +\infty)$成立，又设
+$$
+\lim_{x \rightarrow +\infty} f(x) = \lim_{x \rightarrow +\infty} g(x) = 0,
+$$
+如果极限$\lim_{x \rightarrow +\infty} \frac{f'(x)}{g'(x)}$存在（或为$\infty$），有
+$$
+\lim_{x \rightarrow a^+} \frac{f(x)}{g(x)} = \lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}.
+$$
+**定理3.6.3**：设函数$f, g$在$(a, b)$上可导，并且$g(x) \neq 0$，且
+$$
+\lim_{x \rightarrow a^+}g(x) = \infty
+$$
+如果极限$\lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}$存在或为$\infty$，那么
+$$
+\lim_{x \rightarrow a^+} \frac{f(x)}{g(x)} = \lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}.
+$$
+
 
 ## 参考
 
